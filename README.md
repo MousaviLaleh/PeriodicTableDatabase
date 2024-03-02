@@ -193,7 +193,7 @@ If you run ./element.sh script with another element as input, you should get the
 If the argument input to your element.sh script doesn't exist as an atomic_number, symbol, or name in the database, the only output should be I could not find that element in the database. The message for the first commit in your repo should be Initial commit <br/>
 
 
-The rest of the commit messages should start with fix:, feat:, refactor:, chore:, or test:
+The rest of the commit messages should start with `fix:`, `feat:`, `refactor:`, `chore:`, or `test:`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 touch README.md
 git status
