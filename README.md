@@ -58,7 +58,7 @@ ALTER TABLE properties RENAME COLUMN weight TO atomic_mass;
 
 You should rename the melting_point column to melting_point_celsius and the boiling_point column to boiling_point_celsius
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-ALTER TABLE properties RENAME COLUMN melting_point TO melting_point_celsius;  <br/>
+ALTER TABLE properties RENAME COLUMN melting_point TO melting_point_celsius;
 ALTER TABLE properties RENAME COLUMN boiling_point TO boiling_point_celsius;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
