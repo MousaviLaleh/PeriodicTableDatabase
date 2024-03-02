@@ -80,7 +80,7 @@ ALTER TABLE elements ADD UNIQUE(name);
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-- Your symbol and name columns should have the NOT NULL constraint
+- Your symbol and name columns should have the `NOT NULL` constraint
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 ALTER TABLE elements ALTER COLUMN symbol SET NOT NULL; 
 ALTER TABLE elements ALTER COLUMN name SET NOT NULL;
@@ -107,7 +107,7 @@ INSERT INTO types(type_id, type) VALUES(1, 'metal'), (2, 'nonmetal'), (3, 'metal
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-- Your properties table should have a type_id foreign key column that references the type_id column from the types table. It should be an INT with the NOT NULL constraint  
+- Your properties table should have a type_id foreign key column that references the `type_id` column from the types table. It should be an `INT` with the `NOT NULL` constraint  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 INSERT INTO types(type_id, type) VALUES(0, ''); 
 ALTER TABLE properties ADD COLUMN type_id INT NOT NULL DEFAULT(0);
@@ -115,7 +115,7 @@ ALTER TABLE properties ADD FOREIGN KEY(type_id) REFERENCES types(type_id);
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-- Each row in your properties table should have a type_id value that links to the correct type from the types table
+- Each row in your properties table should have a `type_id` value that links to the correct type from the types table
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 UPDATE properties p SET type_id=(SELECT type_id FROM types WHERE type=p.type);
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -127,7 +127,7 @@ UPDATE elements SET symbol = INITCAP(symbol);
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-- You should remove all the trailing zeros after the decimals from each row of the atomic_mass column. You may need to adjust a data type to DECIMAL for this. The final values they should be are in the atomic_mass.txt file
+- You should remove all the trailing zeros after the decimals from each row of the atomic_mass column. You may need to adjust a data type to `DECIMAL` for this. The final values they should be are in the `atomic_mass.txt` file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ALTER TABLE properties ALTER COLUMN atomic_mass TYPE DECIMAL;
 UPDATE properties SET atomic_mass=TRIM(TRAILING '0' FROM CAST(atomic_mass AS TEXT))::DECIMAL;
