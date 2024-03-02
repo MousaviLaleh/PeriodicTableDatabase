@@ -18,7 +18,9 @@ select * from elements;
              7 | N      | Nitrogen
              8 | O      | Oxygen
           1000 | mT     | moTanium
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 select * from properties;
  atomic_number |   type    |  weight   | melting_point | boiling_point 
 ---------------+-----------+-----------+---------------+---------------
