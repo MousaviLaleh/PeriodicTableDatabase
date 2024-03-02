@@ -38,15 +38,15 @@ select * from properties;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Read the instructions below and complete user stories to finish the project. <br/>
-Part 1: Fix the database<br/>
+**Part 1:** Fix the database<br/>
 There are some mistakes in the database that need to be fixed or changed. See the user stories below for what to change.
 <br/>
 
-Part 2: Create your git repository<br/>
+**Part 2:** Create your git repository<br/>
 You need to make a small bash program. The code needs to be version controlled with git, so you will need to turn the suggested folder into a git repository.
 <br/>
 
-Part 3: Create the script<br/>
+**Part 3:** Create the script<br/>
 Lastly, you need to make a script that accepts an argument in the form of an atomic number, symbol, or name of an element and outputs some information about the given element. In your script, you should create a PSQL variable for querying the database like this:<br/>
 `PSQL="psql --username=<your_postgres_username> --dbname=<database_name> -t --no-align -c"` <br/>
 add more flags if you need to.
