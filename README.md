@@ -94,7 +94,7 @@ ALTER TABLE properties ADD FOREIGN KEY(atomic_number) REFERENCES elements(atomic
 
 
 - You should create a types table that will store the three types of elements <br/>
-- Your types table should have a type_id column that is an integer and the primary key  <br/>
+- Your types table should have a `type_id` column that is an integer and the primary key  <br/>
 - Your types table should have a type column that's a `VARCHAR` and cannot be null. It will store the different types from the type column in the properties table
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 CREATE TABLE types(type_id INT PRIMARY KEY, type VARCHAR(20) NOT NULL); 
