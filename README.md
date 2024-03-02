@@ -65,7 +65,7 @@ ALTER TABLE properties RENAME COLUMN boiling_point TO boiling_point_celsius;
 
 Your melting_point_celsius and boiling_point_celsius columns should not accept null values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-ALTER TABLE properties ALTER COLUMN melting_point_celsius SET NOT NULL;  <br/>
+ALTER TABLE properties ALTER COLUMN melting_point_celsius SET NOT NULL; 
 ALTER TABLE properties ALTER COLUMN boiling_point_celsius SET NOT NULL;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -184,8 +184,8 @@ git commit -m "Add element.sh file"
 
 
 If you run ./element.sh, it should output only Please provide an element as an argument. and finish running. <br/>
-If you run `./element.sh 1`, `./element.sh H`, or `./element.sh Hydrogen`, it should output only The element with atomic number 1 is Hydrogen (H). <br/> 
-"It's a nonmetal, with a mass of 1.008 amu. Hydrogen has a melting point of -259.1 celsius and a boiling point of -252.9 celsius." <br/>
+If you run `./element.sh 1`, `./element.sh H`, or `./element.sh Hydrogen`, it should output only The element with atomic number 1 is Hydrogen (H).
+`It's a nonmetal, with a mass of 1.008 amu. Hydrogen has a melting point of -259.1 celsius and a boiling point of -252.9 celsius.` <br/>
 
 If you run ./element.sh script with another element as input, you should get the same output but with information associated with the given element. <br/>
 If the argument input to your element.sh script doesn't exist as an atomic_number, symbol, or name in the database, the only output should be I could not find that element in the database. The message for the first commit in your repo should be Initial commit <br/>
