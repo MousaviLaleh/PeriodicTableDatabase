@@ -72,14 +72,14 @@ ALTER TABLE properties ALTER COLUMN boiling_point_celsius SET NOT NULL;
 
 You should add the UNIQUE constraint to the symbol and name columns from the elements table 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ALTER TABLE elements ADD UNIQUE(symbol);  <br/>
+ALTER TABLE elements ADD UNIQUE(symbol);
 ALTER TABLE elements ADD UNIQUE(name);
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 Your symbol and name columns should have the NOT NULL constraint
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-ALTER TABLE elements ALTER COLUMN symbol SET NOT NULL;   <br/>
+ALTER TABLE elements ALTER COLUMN symbol SET NOT NULL; 
 ALTER TABLE elements ALTER COLUMN name SET NOT NULL;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -99,7 +99,7 @@ CREATE TABLE types(type_id INT PRIMARY KEY, type VARCHAR(20) NOT NULL);
 
 
 You should add three rows to your types table whose values are the three different types from the properties table
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 INSERT INTO types(type_id, type) VALUES(1, 'metal'), (2, 'nonmetal'), (3, 'metalloid');
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
