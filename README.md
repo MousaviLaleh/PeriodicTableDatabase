@@ -48,8 +48,7 @@ You need to make a small bash program. The code needs to be version controlled w
 
 **Part 3:** Create the script<br/>
 Lastly, you need to make a script that accepts an argument in the form of an atomic number, symbol, or name of an element and outputs some information about the given element. In your script, you should create a PSQL variable for querying the database like this:<br/>
-`PSQL="psql --username=<your_postgres_username> --dbname=<database_name> -t --no-align -c"` <br/>
-add more flags if you need to.
+`PSQL="psql --username=<your_postgres_username> --dbname=<database_name> -t --no-align -c"`, add more flags if you need to.
 
 
 ## Complete the tasks below
