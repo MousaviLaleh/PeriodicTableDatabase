@@ -120,7 +120,7 @@ UPDATE properties p SET type_id=(SELECT type_id FROM types WHERE type=p.type);
 
 You should capitalize the first letter of all the symbol values in the elements table. Be careful to only capitalize the letter and not change any others 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-UPDATE elements SET symbol=INITCAP(symbol);
+UPDATE elements SET symbol = INITCAP(symbol);
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
