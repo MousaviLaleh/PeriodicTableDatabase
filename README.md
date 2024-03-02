@@ -50,7 +50,7 @@ Lastly, you need to make a script that accepts an argument in the form of an ato
 add more flags if you need to.
 
 
-## Complete the tasks below** 
+## Complete the tasks below
 
 You should rename the weight column to atomic_mass 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
