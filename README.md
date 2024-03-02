@@ -3,7 +3,7 @@
 
 ## Instructions
 
-You are started with a periodic_table database that has information about some chemical elements. <br/>
+You are started with a `periodic_table` database that has information about some chemical elements. <br/>
 Connect to your database using Bash terminal. Your database has initial tables as below:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 select * from elements;
