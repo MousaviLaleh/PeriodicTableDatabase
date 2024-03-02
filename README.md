@@ -184,7 +184,7 @@ git commit -m "Add element.sh file"
 
 
 If you run ./element.sh, it should output only Please provide an element as an argument. and finish running. <br/>
-If you run ./element.sh 1, ./element.sh H, or ./element.sh Hydrogen, it should output only The element with atomic number 1 is Hydrogen (H). <br/> 
+If you run ~./element.sh 1~, ~./element.sh H~, or ~./element.sh Hydrogen~, it should output only The element with atomic number 1 is Hydrogen (H). <br/> 
 "It's a nonmetal, with a mass of 1.008 amu. Hydrogen has a melting point of -259.1 celsius and a boiling point of -252.9 celsius." <br/>
 
 If you run ./element.sh script with another element as input, you should get the same output but with information associated with the given element. <br/>
