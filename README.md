@@ -195,20 +195,14 @@ If the argument input to your element.sh script doesn't exist as an atomic_numbe
 
 The rest of the commit messages should start with `fix:`, `feat:`, `refactor:`, `chore:`, or `test:`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-touch README.md
-git status
-git add .
-git commit -m "Initial Commit"
-touch element.sh
-git commit -m "feat: add element.sh script file"
 - after writing the first version of your code
 git add .
 git commit -m "feat: add the script"
-
+<br/>
 - after testing your code and finalizing
 git add .
 git commit -m "feat: test the script"
-
+<br/>
 - last commit. you can add some data into your README file
 git commit -m "feat: edit README and add the rpojet instruction"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
