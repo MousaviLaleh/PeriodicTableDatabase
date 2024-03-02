@@ -94,7 +94,7 @@ ALTER TABLE properties ADD FOREIGN KEY(atomic_number) REFERENCES elements(atomic
 
 You should create a types table that will store the three types of elements <br/>
 Your types table should have a type_id column that is an integer and the primary key  <br/>
-Your types table should have a type column that's a VARCHAR and cannot be null.It will store the different types from the type column in the properties table
+Your types table should have a type column that's a `VARCHAR` and cannot be null. It will store the different types from the type column in the properties table
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 CREATE TABLE types(type_id INT PRIMARY KEY, type VARCHAR(20) NOT NULL); 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -166,7 +166,7 @@ Your periodic_table repo should have at least five commits
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 touch README.md
 git add .
-git commit -m "Initial commit"
+git commit -m "feat: Initial commit"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -185,11 +185,11 @@ git commit -m "Add element.sh file"
 
 
 
-If you run ./element.sh, it should output only Please provide an element as an argument. and finish running. <br/>
-If you run `./element.sh 1`, `./element.sh H`, or `./element.sh Hydrogen`, it should output only The element with atomic number 1 is Hydrogen (H). <br/> Like this: <br/>
+If you run `./element.sh`, it should output only Please provide an element as an argument. and finish running. <br/>
+If you run `./element.sh 1`, `./element.sh H`, or `./element.sh Hydrogen`, it should output only The element with atomic number 1 is Hydrogen (H). <br/>
 `It's a nonmetal, with a mass of 1.008 amu. Hydrogen has a melting point of -259.1 celsius and a boiling point of -252.9 celsius.` <br/>
 
-If you run ./element.sh script with another element as input, you should get the same output but with information associated with the given element. <br/>
+If you run `./element.sh` script with another element as input, you should get the same output but with information associated with the given element. <br/>
 If the argument input to your element.sh script doesn't exist as an atomic_number, symbol, or name in the database, the only output should be I could not find that element in the database. The message for the first commit in your repo should be Initial commit <br/>
 
 
