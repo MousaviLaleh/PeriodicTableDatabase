@@ -31,7 +31,7 @@ select * from properties;
              7 | nonmetal  | 14.007000 |        -210.1 |        -195.8
              8 | nonmetal  | 15.999000 |          -218 |          -183
           1000 | metalloid |  1.000000 |            10 |           100
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Read the instructions below and complete user stories to finish the project. <br/>
 Part 1: Fix the database<br/>
