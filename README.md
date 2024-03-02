@@ -65,10 +65,11 @@ Your melting_point_celsius and boiling_point_celsius columns should not accept n
 ALTER TABLE properties ALTER COLUMN melting_point_celsius SET NOT NULL;  <br/>
 ALTER TABLE properties ALTER COLUMN boiling_point_celsius SET NOT NULL;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-You should add the UNIQUE constraint to the symbol and name columns from the elements table  <br/>
+You should add the UNIQUE constraint to the symbol and name columns from the elements table 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ALTER TABLE elements ADD UNIQUE(symbol);  <br/>
 ALTER TABLE elements ADD UNIQUE(name);
-<br/>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Your symbol and name columns should have the NOT NULL constraint
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -138,37 +139,40 @@ git init
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Your repository should have a main branch with all your commits
+~~~~~~~~~~~~~~~~~~~~~
 git checkout -b main
-
+~~~~~~~~~~~~~~~~~~~~~
 
 Your periodic_table repo should have at least five commits
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 touch README.md
 git add .
 git commit -m "Initial commit"
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You should create an element.sh file in your repo folder for the program I want you to make
+~~~~~~~~~~~~~~~~~
 touch element.sh
-
+~~~~~~~~~~~~~~~~~
 
 Your script (.sh) file should have executable permissions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 chmod +x element.sh
 git add .
 git commit -m "Add element.sh file"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-If you run ./element.sh, it should output only Please provide an element as an argument. and finish running.
+If you run ./element.sh, it should output only Please provide an element as an argument. and finish running. <br/>
 
+If you run ./element.sh 1, ./element.sh H, or ./element.sh Hydrogen, it should output only The element with atomic number 1 is Hydrogen (H). <br/> 
+"It's a nonmetal, with a mass of 1.008 amu. Hydrogen has a melting point of -259.1 celsius and a boiling point of -252.9 celsius." <br/>
 
-If you run ./element.sh 1, ./element.sh H, or ./element.sh Hydrogen, it should output only The element with atomic number 1 is Hydrogen (H). 
-"It's a nonmetal, with a mass of 1.008 amu. Hydrogen has a melting point of -259.1 celsius and a boiling point of -252.9 celsius."
-
-If you run ./element.sh script with another element as input, you should get the same output but with information associated with the given element.
-If the argument input to your element.sh script doesn't exist as an atomic_number, symbol, or name in the database, the only output should be I could not find that element in the database.
-The message for the first commit in your repo should be Initial commit
+If you run ./element.sh script with another element as input, you should get the same output but with information associated with the given element. <br/>
+If the argument input to your element.sh script doesn't exist as an atomic_number, symbol, or name in the database, the only output should be I could not find that element in the database. The message for the first commit in your repo should be Initial commit <br/>
 
 The rest of the commit messages should start with fix:, feat:, refactor:, chore:, or test:
-- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 touch README.md
 git status
 git add .
@@ -185,16 +189,18 @@ git commit -m "feat: test the script"
 
 - last commit. you can add some data into your README file
 git commit -m "feat: edit README and add the rpojet instruction"
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You should delete the non existent element, whose atomic_number is 1000, from the two tables
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 DELETE FROM properties WHERE atomic_number=1000;
 DELETE FROM elements WHERE atomic_number=1000;
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Your properties table should not have a type column
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ALTER TABLE properties DROP COLUMN type;
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You should finish your project while on the main branch. Your working tree should be clean and you should not have any uncommitted changes
 
