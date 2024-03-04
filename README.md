@@ -1,7 +1,8 @@
 # Periodic Table Database
 ## Project Goal
 Build a Periodic Table Database using Bash nd PostgreSQL and Git. <br/>
-:copyright: [freeCodeCamp](https://www.freecodecamp.org/learn/relational-database/) Relational Database Course
+:copyright: [freeCodeCamp](https://www.freecodecamp.org/learn/relational-database/) Relational Database Course  <br/>
+Check the code here... [element.sh](element.sh)
 
 ## Instructions
 
